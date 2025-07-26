@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: workout-telegram-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn WorkoutBot:app
+    envVars:
+      - key: BOT_TOKEN
+        value: 7578887710:AAGk_MrXE9M1yLQ21FcS9F2C2j9GFxTyWKs
