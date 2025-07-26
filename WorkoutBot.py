@@ -1,7 +1,7 @@
 import os
 from flask import Flask, request
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes, Dispatcher, MessageHandler, filters
+from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes, MessageHandler, filters
 from telegram.ext.webhookhandler import WebhookHandler
 
 from workouts import generate_workouts, build_day_keyboard, build_difficulty_keyboard, WORKOUTS
