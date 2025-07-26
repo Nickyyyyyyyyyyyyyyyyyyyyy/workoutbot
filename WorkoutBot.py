@@ -71,7 +71,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if workout_data and selected_difficulty in workout_data:
             workout_list = workout_data[selected_difficulty]
             response = f"💪 **Тренування на День {day_number} ({selected_difficulty} рівень)**\n\n"
-"
+            
             response += "\n".join([f"• {item}" for item in workout_list])
         else:
             response = f"На жаль, тренування для дня {day_number} ({selected_difficulty} рівень) не знайдено."
